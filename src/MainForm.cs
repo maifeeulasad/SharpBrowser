@@ -227,6 +227,18 @@ namespace SharpBrowser {
 			SetTabTitle(CurBrowser, "Loading...");
 
 			// load page
+            //if(urlLower)
+            
+            // add file logic and butifier here
+
+
+            //
+            //
+
+
+
+
+
 			if (urlLower == "localhost") {
 
 				newUrl = "http://localhost/";
@@ -462,14 +474,15 @@ namespace SharpBrowser {
             {
                 
                 this.WindowState = FormWindowState.Normal;
-                this.Size = previousSize;
+                //this.Size = previousSize;
+                this.Size = new Size(200, 200);
             }
             else
             {
                 previousSize = this.Size;
                 this.WindowState = FormWindowState.Maximized;
-                this.ControlBox = false;
-                this.Text = String.Empty;
+                //this.ControlBox = false;
+                //this.Text = String.Empty;
 
             }
         }
