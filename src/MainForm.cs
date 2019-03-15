@@ -462,7 +462,6 @@ namespace SharpBrowser {
             {
                 this.WindowState = FormWindowState.Normal;
                 this.Size = previousSize;
-                
                 this.SetStyle(ControlStyles.Opaque, false);
             }
             else
@@ -953,11 +952,15 @@ namespace SharpBrowser {
 			}
 		}
 
-		#endregion
 
 
+        #endregion
 
-	}
+        private void loadingProgressBar_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
 
 /// <summary>
