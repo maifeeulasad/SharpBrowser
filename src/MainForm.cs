@@ -29,14 +29,19 @@ namespace SharpBrowser {
 
 		public static string Branding = "SharpBrowser";
 		public static string UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36";
-		public static string HomepageURL = "https://www.google.com";
+		public static string HomepageURL = "https://duckduckgo.com/";
 		public static string NewTabURL = "about:blank";
 		public static string DownloadsURL = "sharpbrowser://storage/downloads.html";
 		public static string FileNotFoundURL = "sharpbrowser://storage/errors/notFound.html";
 		public static string CannotConnectURL = "sharpbrowser://storage/errors/cannotConnect.html";
-		public static string SearchURL = "https://www.google.com/search?q=";
+		public static string SearchURL = "https://duckduckgo.com/?q=";
 
-		public bool WebSecurity = true;
+
+        /// <summary>
+        /// https://duckduckgo.com/?q=hello+world&ia=web
+        /// </summary>
+
+        public bool WebSecurity = true;
 		public bool CrossDomainSecurity = true;
 		public bool WebGL = true;
 		public bool ApplicationCache = true;
