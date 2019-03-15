@@ -46,8 +46,8 @@ namespace SharpBrowser
             this.PanelToolbar = new System.Windows.Forms.Panel();
             this.TabPages = new FarsiLibrary.Win.FATabStrip();
             this.tabStrip1 = new FarsiLibrary.Win.FATabStripItem();
-            this.PanelStatus = new System.Windows.Forms.Panel();
             this.tabStripAdd = new FarsiLibrary.Win.FATabStripItem();
+            this.PanelStatus = new System.Windows.Forms.Panel();
             this.PanelSearch = new System.Windows.Forms.Panel();
             this.BtnNextSearch = new System.Windows.Forms.Button();
             this.BtnPrevSearch = new System.Windows.Forms.Button();
@@ -159,13 +159,11 @@ namespace SharpBrowser
             // 
             // TxtURL
             // 
-
-            SharpBrowser.Utils.SetStyle(this.TxtURL, ControlStyles.SupportsTransparentBackColor, true);
             this.TxtURL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtURL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtURL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtURL.Location = new System.Drawing.Point(60, 5);
+            this.TxtURL.Location = new System.Drawing.Point(60, 2);
             this.TxtURL.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TxtURL.Name = "TxtURL";
             this.TxtURL.Size = new System.Drawing.Size(812, 29);
@@ -177,12 +175,12 @@ namespace SharpBrowser
             // PanelToolbar
             // 
             this.PanelToolbar.BackColor = System.Drawing.Color.White;
-            this.PanelToolbar.Controls.Add(this.TxtURL);
             this.PanelToolbar.Controls.Add(this.BtnDownloads);
             this.PanelToolbar.Controls.Add(this.BtnForward);
             this.PanelToolbar.Controls.Add(this.BtnBack);
             this.PanelToolbar.Controls.Add(this.BtnRefresh);
             this.PanelToolbar.Controls.Add(this.BtnStop);
+            this.PanelToolbar.Controls.Add(this.TxtURL);
             this.PanelToolbar.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelToolbar.Location = new System.Drawing.Point(0, 0);
             this.PanelToolbar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -217,14 +215,6 @@ namespace SharpBrowser
             this.tabStrip1.TabIndex = 0;
             this.tabStrip1.Title = "Loading...";
             // 
-            // PanelStatus
-            // 
-            this.PanelStatus.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.PanelStatus.Location = new System.Drawing.Point(0, 651);
-            this.PanelStatus.Name = "PanelStatus";
-            this.PanelStatus.Size = new System.Drawing.Size(934, 20);
-            this.PanelStatus.TabIndex = 8;
-            // 
             // tabStripAdd
             // 
             this.tabStripAdd.CanClose = false;
@@ -233,6 +223,14 @@ namespace SharpBrowser
             this.tabStripAdd.Size = new System.Drawing.Size(931, 601);
             this.tabStripAdd.TabIndex = 1;
             this.tabStripAdd.Title = "+";
+            // 
+            // PanelStatus
+            // 
+            this.PanelStatus.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.PanelStatus.Location = new System.Drawing.Point(0, 651);
+            this.PanelStatus.Name = "PanelStatus";
+            this.PanelStatus.Size = new System.Drawing.Size(934, 20);
+            this.PanelStatus.TabIndex = 8;
             // 
             // PanelSearch
             // 
@@ -340,23 +338,23 @@ namespace SharpBrowser
 		private FarsiLibrary.Win.FATabStrip TabPages;
         private FarsiLibrary.Win.FATabStripItem tabStrip1;
         private FarsiLibrary.Win.FATabStripItem tabStripAdd;
-		private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.ContextMenuStrip menuStripTab;
-        private System.Windows.Forms.ToolStripMenuItem menuCloseTab;
-        private System.Windows.Forms.ToolStripMenuItem menuCloseOtherTabs;
-		private System.Windows.Forms.Button BtnForward;
-		private System.Windows.Forms.Button BtnBack;
-		private System.Windows.Forms.Button BtnStop;
-		private System.Windows.Forms.Button BtnRefresh;
-		private System.Windows.Forms.Button BtnDownloads;
-		private System.Windows.Forms.TextBox TxtURL;
-		private System.Windows.Forms.Panel PanelToolbar;
-		private System.Windows.Forms.Panel PanelStatus;
-		private System.Windows.Forms.Panel PanelSearch;
-		private System.Windows.Forms.TextBox TxtSearch;
-		private System.Windows.Forms.Button BtnCloseSearch;
-		private System.Windows.Forms.Button BtnPrevSearch;
-		private System.Windows.Forms.Button BtnNextSearch;
+		private Timer timer1;
+        private ContextMenuStrip menuStripTab;
+        private ToolStripMenuItem menuCloseTab;
+        private ToolStripMenuItem menuCloseOtherTabs;
+		private Button BtnForward;
+		private Button BtnBack;
+		private Button BtnStop;
+		private Button BtnRefresh;
+		private Button BtnDownloads;
+		private TextBox TxtURL;
+		private Panel PanelToolbar;
+		private Panel PanelStatus;
+		private Panel PanelSearch;
+		private TextBox TxtSearch;
+		private Button BtnCloseSearch;
+		private Button BtnPrevSearch;
+		private Button BtnNextSearch;
     }
 }
 
