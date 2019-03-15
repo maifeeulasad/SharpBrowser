@@ -461,11 +461,14 @@ namespace SharpBrowser {
             if(fullScreen==true)
             {
                 this.Size = previousSize;
-                //this.SetStyle(ControlStyles.)
+                this.WindowState = FormWindowState.Normal;
+                this.SetStyle(ControlStyles.Opaque, false);
             }
             else
             {
                 previousSize = this.Size;
+                this.WindowState = FormWindowState.Maximized;
+                this.SetStyle(ControlStyles.Opaque,true);
 
             }
         }
