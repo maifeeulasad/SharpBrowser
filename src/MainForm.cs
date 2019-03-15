@@ -460,8 +460,9 @@ namespace SharpBrowser {
         {
             if(fullScreen==true)
             {
-                this.Size = previousSize;
                 this.WindowState = FormWindowState.Normal;
+                this.Size = previousSize;
+                
                 this.SetStyle(ControlStyles.Opaque, false);
             }
             else
