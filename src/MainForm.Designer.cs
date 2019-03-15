@@ -1,4 +1,7 @@
-﻿namespace SharpBrowser
+﻿
+using System.Windows.Forms;
+
+namespace SharpBrowser
 {
     partial class MainForm
     {
@@ -156,6 +159,8 @@
             // 
             // TxtURL
             // 
+
+            SharpBrowser.Utils.SetStyle(this.TxtURL, ControlStyles.SupportsTransparentBackColor, true);
             this.TxtURL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtURL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
