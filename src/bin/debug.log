@@ -1367,3 +1367,29 @@ C:\fakepath(95,10-42): warning X3571: pow(f, e) will not work for negative f, us
 [0222/114930.472:INFO:CONSOLE(0)] "[.WebGL-08E04010]RENDER WARNING: there is no texture bound to the unit 0", source: https://alteredqualia.com/three/examples/webgl_pasta.html (0)
 [0222/114930.473:INFO:CONSOLE(0)] "[.WebGL-08E04010]RENDER WARNING: there is no texture bound to the unit 0", source: https://alteredqualia.com/three/examples/webgl_pasta.html (0)
 [0222/114930.474:INFO:CONSOLE(0)] "WebGL: too many errors, no more errors will be reported to the console for this context.", source: https://alteredqualia.com/three/examples/webgl_pasta.html (0)
+[0315/153728.430:INFO:CONSOLE(0)] "
+%cStop!", source:  (0)
+[0315/153728.453:INFO:CONSOLE(0)] "
+%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it is a scam and will give them access to your Facebook account.", source:  (0)
+[0315/153728.454:INFO:CONSOLE(0)] "
+%cSee https://www.facebook.com/selfxss for more information.", source:  (0)
+[0315/153728.454:INFO:CONSOLE(0)] "
+%c", source:  (0)
+[0315/153731.322:INFO:CONSOLE(34)] "<link rel=preload> must have a valid `as` value", source: https://www.youtube.com/watch?v=C8Jq7O5o9G0 (34)
+[0315/153731.747:INFO:CONSOLE(0)] "HTML Imports is deprecated and will be removed in M73, around March 2019. Please use ES modules instead. See https://www.chromestatus.com/features/5144752345317376 for more details.", source:  (0)
+[0315/153731.771:INFO:CONSOLE(0)] "Refused to display 'https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26next%3D%252Fsignin_passive%26hl%3Den%26feature%3Dpassive%26app%3Ddesktop&hl=en&passive=true' in a frame because it set 'X-Frame-Options' to 'deny'.", source: https://www.youtube.com/watch?v=C8Jq7O5o9G0 (0)
+[0315/153731.962:WARNING:url_request_job_manager.cc(90)] Failed to map: chrome-extension://invalid/
+[0315/153732.096:INFO:CONSOLE(1)] "Uncaught SyntaxError: Unexpected token <", source: sharpbrowser://storage/errors/cannotConnect.html (1)
+[0315/153732.726:INFO:CONSOLE(23)] "document.registerElement is deprecated and will be removed in M73, around March 2019. Please use window.customElements.define instead. See https://www.chromestatus.com/features/4642138092470272 for more details.", source: https://www.youtube.com/yts/jsbin/desktop_polymer-vflOyeTWf/desktop_polymer.js (23)
+[0315/153735.648:INFO:CONSOLE(15)] "chrome.loadTimes() is deprecated, instead use standardized API: nextHopProtocol in Navigation Timing 2. https://www.chromestatus.com/features/5637885046816768.", source: https://www.youtube.com/yts/jsbin/network-vfl3EpVxj/network.js (15)
+[0315/153737.798:INFO:CONSOLE(0)] "The resource https://r2---sn-3noxufvg3-jb2e.googlevideo.com/generate_204 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.", source:  (0)
+[0315/153737.799:INFO:CONSOLE(0)] "The resource https://r2---sn-3noxufvg3-jb2e.googlevideo.com/generate_204?conn2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.", source:  (0)
+[0315/153740.113:INFO:CONSOLE(0)] "Mixed Content: The page at 'https://bd.linkedin.com/in/maifee-ul-asad' was loaded over HTTPS, but requested an insecure resource 'http://web.archive.org/web/*/https://bd.linkedin.com/tscp-serving/dtag?sz=300x250&ti=2&p=1&z=full_profile&_x=%3Bcompany%3D1360464870%3Bpcntry%3Dbd'. This request has been blocked; the content must be served over HTTPS.", source: https://bd.linkedin.com/in/maifee-ul-asad (0)
+[0315/153750.671:WARNING:angle_platform_impl.cc(52)] compileToBinary(232): 
+C:\fakepath(65,8-58): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(73,9-43): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+
+[0315/153811.907:WARNING:angle_platform_impl.cc(52)] compileToBinary(232): 
+C:\fakepath(73,10-42): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(95,10-42): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+
