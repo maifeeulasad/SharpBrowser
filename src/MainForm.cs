@@ -37,9 +37,8 @@ namespace SharpBrowser {
 		public static string SearchURL = "https://duckduckgo.com/?q=";
 
 
-        /// <summary>
-        /// https://duckduckgo.com/?q=hello+world&ia=web
-        /// </summary>
+        public static Size previousSize = new Size(400, 300);
+        public static bool fullScreen = false;
 
         public bool WebSecurity = true;
 		public bool CrossDomainSecurity = true;
@@ -112,13 +111,17 @@ namespace SharpBrowser {
 			KeyboardHandler.AddHotKey(this, CloseSearch, Keys.Escape);
 			KeyboardHandler.AddHotKey(this, StopActiveTab, Keys.Escape);
 
+            // full-screen hotkeys
+			KeyboardHandler.AddHotKey(this, FullScreenToggle, Keys.F11);
 
-		}
 
-		/// <summary>
-		/// we activate all the tooltips stored in the Tag property of the buttons
-		/// </summary>
-		public void InitTooltips(System.Windows.Forms.Control.ControlCollection parent) {
+
+        }
+
+        /// <summary>
+        /// we activate all the tooltips stored in the Tag property of the buttons
+        /// </summary>
+        public void InitTooltips(System.Windows.Forms.Control.ControlCollection parent) {
 			foreach (Control ui in parent) {
 				Button btn = ui as Button;
 				if (btn != null) {
@@ -453,7 +456,22 @@ namespace SharpBrowser {
 			CurBrowser.Stop();
 		}
 
-		private bool IsOnFirstTab() {
+        private void FullScreenToggle()
+        {
+            if(fullScreen==true)
+            {
+                this.Size = previousSize;
+                //this.SetStyle(ControlStyles.)
+            }
+            else
+            {
+                previousSize = this.Size;
+
+            }
+        }
+
+
+        private bool IsOnFirstTab() {
 			return TabPages.SelectedItem == TabPages.Items[0];
 		}
 		private bool IsOnLastTab() {
