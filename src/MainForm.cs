@@ -112,7 +112,7 @@ namespace SharpBrowser {
 			KeyboardHandler.AddHotKey(this, StopActiveTab, Keys.Escape);
 
             // full-screen hotkeys
-			KeyboardHandler.AddHotKey(this, FullScreenToggle, Keys.F11);
+            KeyboardHandler.AddHotKey(this, FullScreenToggle, Keys.F11, true);
 
 
 
@@ -410,7 +410,11 @@ namespace SharpBrowser {
 			// save tab obj in tabstrip
 			tabStrip.Tag = tab;
 
-			if (url.StartsWith("sharpbrowser:")) {
+            CefSharpSettings.LegacyJavascriptBindingEnabled = true;
+          
+
+
+            if (url.StartsWith("sharpbrowser:")) {
 				browser.RegisterAsyncJsObject("host", host);
 			}
 			return tab;
